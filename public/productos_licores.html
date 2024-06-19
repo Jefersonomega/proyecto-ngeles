@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Licores</title>
+    <link rel="stylesheet" type="text/css" href="css/angel.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('https://buenazo.cronosmedia.glr.pe/original/2020/08/04/5f29d4818ba5f237570400ee.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+        }
+
+        .contenedor {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            max-width: 800px;
+        }
+
+        .header-container {
+            background-color: #8B4513; /* Color café maderita */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            border-radius: 10px;
+        }
+
+        header, footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            border-radius: 10px;
+        }
+
+        nav.menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        section#productos article {
+            margin: 20px 0;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+        }
+
+        h1, h2, p {
+            margin: 10px 0;
+        }
+
+        .copy {
+            font-size: 14px;
+        }
+
+        .carousel-item img {
+            height: 450px;
+            object-fit: cover;
+        }
+
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+
+        .carousel-caption h5 a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .description-box {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 18px;
+            font-style: italic;
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        .description-box:hover {
+            background-color: rgba(255, 255, 255, 0.7);
+            color: #8B4513;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Productos de Licores</h1>
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="trabajo2.html">Regístrate</a>
+                <a href="compracarrito.php">Compra</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="productos">
+        <div class="contenedor">
+            <article>
+                <h2>Ron</h2>
+                <div id="ron-description" class="description-box">
+                    <!-- Descripción dinámica del ron -->
+                    <p>Con un característico aroma y un sabor inigualable, el Ron Viejo de Caldas Tradicional es reconocido por su gran carácter y calidad excepcional.</p>
+                </div>
+                
+                <!-- Carrusel de Imágenes -->
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz9VZYdoiLIfRT2mmgmsfhD_P9Zs4ZVBsvxw&s" alt="Ron Viejo de Caldas">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5><a href="compracarrito.php">$55,000</a></h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="https://www.vinoslafavorita.com/cdn/shop/products/RON_BACARDI_BLANCO_750_ML_2@2x.jpg?v=1601067908" alt="Ron Bacardi Blanco">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5><a href="compracarrito.php">$50,000</a></h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="https://olimpica.vtexassets.com/arquivos/ids/624147-800-450?v=637626536380030000&width=800&height=450&aspect=true" alt="Ron Olimpica">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5><a href="compracarrito.php">$50,000</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </article>
+            <article>
+                <h2>Aguardiente</h2>
+                <p>Descripción del Aguardiente.</p>
+            </article>
+            <article>
+                <h2>Brandy</h2>
+                <p>Descripción del Brandy.</p>
+            </article>
+            <article>
+                <h2>Whisky</h2>
+                <p>Descripción del Whisky.</p>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contenedor">
+            <p class="copy">COMPANY COLOMBIANA INTERNACIONALITY &copy; 2024</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Array de descripciones
+            var descriptions = [
+                "Con un característico aroma y un sabor inigualable, el Ron Viejo de Caldas Tradicional es reconocido por su gran carácter y calidad excepcional.",
+                "Combina el clásico ron blanco BACARDÍ Carta Blanca con la vibrante frescura de la lima recién exprimida, coronándolo con hojas de menta y hielo.",
+                "Es un licor hecho con miel virgen de caña, almacenado en barriles de roble blanco colombiano, a una altura de más de 2.000 metros sobre el nivel del mar, lo que le da un toque único de frescura y suaves matices en sus sabores. Posee un aroma dulce, acaramelado y afrutado."
+            ];
+
+            // Cambia la descripción cuando se cambia la imagen del carrusel
+            $('#carouselExampleIndicators').on('slide.bs.carousel', function (e) {
+                var newIndex = $(e.relatedTarget).index();
+                $('#ron-description p').text(descriptions[newIndex]);
+            });
+        });
+    </script>
+</body>
+</html>

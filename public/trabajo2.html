@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registrarte</title>
+<style>
+/* Tus estilos CSS aquí */
+body {
+    background-image: url('https://scontent.fclo1-4.fna.fbcdn.net/v/t39.30808-6/292533386_104838222306118_5060804471837648101_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=kGLQwBs2wBQQ7kNvgEhRO_U&_nc_ht=scontent.fclo1-4.fna&oh=00_AYArOTsfqSvfNn4lyEWTZTKBF3O_ZuL8dvZEMABP8TDYUA&oe=6665ADC8');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group select {
+    width: calc(100% - 12px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.checkbox-group {
+    margin-bottom: 20px;
+}
+
+.checkbox-group label {
+    margin-right: 10px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Registrarte</h1>
+    <form action="procesar_registros.php" method="post">
+        <div class="input-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="input-group">
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+        </div>
+
+        <div class="input-group">
+            <label for="celular_correo">Número de Celular o Correo Electrónico:</label>
+            <input type="text" id="celular_correo" name="celular_correo" required>
+        </div>
+
+        <div class="input-group">
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+        </div>
+
+        <div class="input-group">
+            <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+            <input type="number" id="dia" name="dia" min="1" max="31" placeholder="Día" required>
+            <select id="mes" name="mes" required>
+                <option value="">Mes</option>
+                <option value="enero">Enero</option>
+                <option value="febrero">Febrero</option>
+                <option value="marzo">Marzo</option>
+                <option value="abril">Abril</option>
+                <option value="mayo">Mayo</option>
+                <option value="junio">Junio</option>
+                <option value="julio">Julio</option>
+                <option value="agosto">Agosto</option>
+                <option value="septiembre">Septiembre</option>
+                <option value="octubre">Octubre</option>
+                <option value="noviembre">Noviembre</option>
+                <option value="diciembre">Diciembre</option>
+            </select>
+            <input type="number" id="anio" name="anio" placeholder="Año" min="1900" max="2100" required>
+        </div>
+
+        <div class="input-group">
+            <label for="sexo">Sexo:</label>
+            <select id="sexo" name="sexo" required>
+                <option value="">Seleccione</option>
+                <option value="hombre">Hombre</option>
+                <option value="mujer">Mujer</option>
+            </select>
+        </div>
+
+        <div class="checkbox-group">
+            <input type="checkbox" id="terminos" name="terminos" required>
+            <label for="terminos">Al hacer clic en "Registrarte", aceptas nuestras Condiciones, la Política de privacidad y la Política de cookies. Es posible que te enviemos notificaciones por SMS, que puedes desactivar cuando quieras.</label>
+        </div>
+
+        <input type="submit" value="Registrarte" class="btn">
+    </form>
+</div>
+
+</body>
+</html>

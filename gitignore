@@ -1,0 +1,10 @@
+# Ignorar archivos generados automáticamente
+*.class
+*.jar
+*.war
+*.ear
+/target/
+
+# Ignorar archivos de configuración local
+.idea/
+.vscode/
